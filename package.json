@@ -15,11 +15,7 @@
     "prettier": "prettier check .",
     "prettier:fix": "prettier . --write --cache"
   },
-  "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.3.1",
-    "prettier": "2.7.1"
-  },
-  "peerDependencies": {
+  "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.1",
     "prettier": "2.7.1"
   }

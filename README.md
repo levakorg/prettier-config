@@ -16,13 +16,15 @@ or
 yarn add --dev @levakorg/prettier-config
 ```
 
-**2. Configuration `prettier` file**
+**2. Configuration `prettier`**
 
-.prettierrc.json
+package.json
 
 ```
 {
-  "plugins": ["@levakorg/prettier-config"],
+  ...
+  "prettier": "@levakorg/prettier-config",
+  ...
 }
 ```
 
@@ -30,7 +32,7 @@ yarn add --dev @levakorg/prettier-config
 
 ```
 module.exports = {
-  plugins: [require('@levakorg/prettier-config')],
+  ...require('@levakorg/prettier-config'),
 }
 ```
 
@@ -65,7 +67,7 @@ yarn prettier:fix
 
 **1. Used dependencies**
 
- * [prettier](https://www.npmjs.com/package/prettier)
- * [@trivago/prettier-plugin-sort-imports](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports)
+- [@trivago/prettier-plugin-sort-imports](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports)
+- [prettier](https://www.npmjs.com/package/prettier)
 
-## [Config](https://github.com/levakorg/prettier-config/master/.prettierrc.js)
+## [Config](https://github.com/levakorg/prettier-config/blob/master/.prettierrc.js)
