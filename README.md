@@ -22,9 +22,7 @@ package.json
 
 ```
 {
-  ...
-  "prettier": "@levakorg/prettier-config",
-  ...
+  "prettier": "@levakorg/prettier-config"
 }
 ```
 
@@ -32,15 +30,15 @@ package.json
 
 ```
 module.exports = {
-  ...require('@levakorg/prettier-config'),
+  ...require('@levakorg/prettier-config')
 }
 ```
 
 **3. Add scripts to local `package.json`**
 
 ```
-"prettier": "prettier check .",
-"prettier:fix": "prettier --write .",
+"prettier": "prettier check ."
+"prettier:fix": "prettier --write ."
 ```
 
 **4. Using scripts**
