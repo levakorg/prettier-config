@@ -1,22 +1,28 @@
 {
-  "name": "@levakorg/prettier-config",
-  "version": "1.0.0",
-  "description": "Default prettier config <levakorg> company",
-  "author": "levakorg <levakorg@gmail.com>",
-  "repository": "https://github.com/levakorg/prettier-config",
-  "homepage": "https://github.com/levakorg/prettier-config",
-  "license": "MIT",
   "main": "index.js",
+  "version": "1.0.0",
+  "name": "@levakorg/prettier-config",
+  "author": "levakorg <levakorg@gmail.com>",
+  "description": "Prettier config levakorg org's",
+  "homepage": "https://github.com/levakorg/prettier-config",
+  "repository": "https://github.com/levakorg/prettier-config",
+  "bugs": "https://github.com/levakorg/prettier-config/issues",
+  "license": "MIT",
   "keywords": [
     "prettier",
     "prettier-config"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prettier": "prettier check .",
     "prettier:fix": "prettier . --write --cache"
   },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.3.1",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.1"
+  },
+  "peerDependencies": {
     "prettier": "2.7.1"
   }
 }
