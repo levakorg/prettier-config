@@ -1,8 +1,8 @@
 # @levakorg/prettier-config
 
-Default prettier config **levakorg** company
+Prettier config levakorg org's
 
-## Setup
+### Setup
 
 **1. Installation**
 
@@ -16,25 +16,31 @@ or
 yarn add --dev @levakorg/prettier-config
 ```
 
-**2. Configuration `prettier`**
+**2. Configuration**
 
 package.json
 
-```
+```JSON
 {
   "prettier": "@levakorg/prettier-config"
 }
 ```
 
+.prettierrc | .prettierrc.json
+
+```JSON
+"@levakorg/prettier-config"
+```
+
 .prettierrc.js
 
-```
+```JS
 module.exports = {
   ...require('@levakorg/prettier-config')
 }
 ```
 
-**3. Add scripts to local `package.json`**
+**3. Add scripts**
 
 ```
 "prettier": "prettier check ."
@@ -61,11 +67,14 @@ yarn prettier
 yarn prettier:fix
 ```
 
-## About
+### About
 
 **1. Used dependencies**
 
 - [@trivago/prettier-plugin-sort-imports](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports)
 - [prettier](https://www.npmjs.com/package/prettier)
 
-## [Config](https://github.com/levakorg/prettier-config/blob/master/.prettierrc.js)
+
+### Notes
+
+**[Config](https://github.com/levakorg/prettier-config/blob/master/.prettierrc.js)**
