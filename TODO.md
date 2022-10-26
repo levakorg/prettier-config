@@ -6,6 +6,7 @@
 
 ## 1.0.1
 
+- [x] Remove about section from README file
 - [ ] Add bable compiler
 - [ ] Add lint-staged, husky
 - [ ] Add tests
