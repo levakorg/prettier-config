@@ -72,8 +72,16 @@ yarn prettier:fix
 **1. Used dependencies**
 
 - [@trivago/prettier-plugin-sort-imports](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports)
+
+**2. Used devDependencies**
+
+- [@levakorg/eslint-config](https://www.npmjs.com/package/@levakorg/eslint-config)
+- [eslint](https://www.npmjs.com/package/eslint)
 - [prettier](https://www.npmjs.com/package/prettier)
 
+**3. Used peerDependencies**
+
+- [prettier](https://www.npmjs.com/package/prettier)
 
 ### Notes
 
