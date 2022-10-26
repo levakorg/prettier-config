@@ -9,3 +9,4 @@
 - [ ] Add bable compiler
 - [ ] Add lint-staged, husky
 - [ ] Add tests
+- [ ] Add yaml config
