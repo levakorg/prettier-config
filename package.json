@@ -1,9 +1,9 @@
 {
   "main": "index.js",
-  "version": "1.0.0",
-  "name": "@levakorg/prettier-config",
-  "author": "levakorg <levakorg@gmail.com>",
+  "version": "1.0.5",
+  "name": "alkhimenoklevakorg-prettier-config",
   "description": "Prettier config levakorg org's",
+  "author": "levakorg authors <levakorg@gmail.com>",
   "homepage": "https://github.com/levakorg/prettier-config",
   "repository": "https://github.com/levakorg/prettier-config",
   "bugs": "https://github.com/levakorg/prettier-config/issues",
@@ -11,6 +11,15 @@
   "keywords": [
     "prettier",
     "prettier-config"
+  ],
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "index.js",
+    ".prettierrc.js"
   ],
   "publishConfig": {
     "access": "public"
@@ -21,6 +30,11 @@
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.1"
+  },
+  "devDependencies": {
+    "@levakorg/eslint-config": "^1.0.0",
+    "eslint": "^8.26.0",
+    "prettier": "2.7.1"
   },
   "peerDependencies": {
     "prettier": "2.7.1"
