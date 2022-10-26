@@ -1,7 +1,7 @@
 {
   "main": "index.js",
-  "version": "1.0.5",
-  "name": "alkhimenoklevakorg-prettier-config",
+  "version": "1.0.1",
+  "name": "@levakorg/prettier-config",
   "description": "Prettier config levakorg org's",
   "author": "levakorg authors <levakorg@gmail.com>",
   "homepage": "https://github.com/levakorg/prettier-config",
