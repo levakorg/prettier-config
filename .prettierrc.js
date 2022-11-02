@@ -9,7 +9,6 @@ module.exports = {
   trailingComma: 'none',
   bracketSpacing: true,
   bracketSameLine: false,
-  jsxBracketSameLine: false,
   arrowParens: 'always',
   // rangeStart: 0,
   // rangeEnd: Infinity,
