@@ -7,13 +7,13 @@ Prettier config levakorg org's
 **1. Installation**
 
 ```
-npm install --save-dev @levakorg/prettier-config
+npm install --save-dev prettier @levakorg/prettier-config
 ```
 
 or
 
 ```
-yarn add --dev @levakorg/prettier-config
+yarn add --dev prettier @levakorg/prettier-config
 ```
 
 **2. Configuration**
@@ -42,9 +42,11 @@ module.exports = {
 
 **3. Add scripts**
 
-```
-"prettier": "prettier check ."
-"prettier:fix": "prettier --write ."
+```JSON
+{
+  "prettier": "prettier check .",
+  "prettier:fix": "prettier --write .",
+}
 ```
 
 **4. Using scripts**
