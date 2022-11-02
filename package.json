@@ -1,6 +1,7 @@
 {
+  "private": false,
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "name": "@levakorg/prettier-config",
   "description": "Prettier config levakorg org's",
   "author": "levakorg authors <levakorg@gmail.com>",
@@ -26,7 +27,10 @@
   },
   "scripts": {
     "prettier": "prettier check .",
-    "prettier:fix": "prettier . --write --cache"
+    "prettier:fix": "prettier --write .",
+    "eslint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte",
+    "eslint:fix": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte --fix",
+    "format": "yarn prettier:fix && yarn eslint:fix"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.1"
@@ -34,9 +38,9 @@
   "devDependencies": {
     "@levakorg/eslint-config": "^1.0.0",
     "eslint": "^8.26.0",
-    "prettier": "2.7.1"
+    "prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "prettier": "2.7.1"
+    "prettier": "^2.7.1"
   }
 }
