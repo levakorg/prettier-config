@@ -1,6 +1,7 @@
 {
   "private": false,
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "version": "1.0.1",
   "name": "@levakorg/prettier-config",
   "description": "Prettier config levakorg org's",
@@ -14,18 +15,17 @@
     "prettier-config"
   ],
   "files": [
-    "lib",
+    "dist",
     "LICENSE",
     "README.md",
     "TODO.md",
-    "CHANGELOG.md",
-    "index.js",
-    ".prettierrc.js"
+    "CHANGELOG.md"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "build": "rollup -c",
     "prettier": "prettier check .",
     "prettier:fix": "prettier --write .",
     "eslint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte",
@@ -36,9 +36,18 @@
     "@trivago/prettier-plugin-sort-imports": "^3.3.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "@levakorg/eslint-config": "^1.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
     "eslint": "^8.26.0",
-    "prettier": "^2.7.1"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.7.1",
+    "rollup": "^3.17.0"
   },
   "peerDependencies": {
     "prettier": "^2.7.1"

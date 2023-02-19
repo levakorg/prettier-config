@@ -21,5 +21,5 @@ module.exports = {
   vueIndentScriptAndStyle: false,
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  ...require('./lib/prettier-plugin-sort-imports.js')
+  ...require('./lib/plugin-sort-imports.js')
 }
