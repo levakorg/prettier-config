@@ -1,15 +1,25 @@
 {
   "private": false,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "version": "1.0.1",
+  "type": "module",
   "name": "@levakorg/prettier-config",
   "description": "Prettier config levakorg org's",
   "author": "levakorg authors <levakorg@gmail.com>",
   "homepage": "https://github.com/levakorg/prettier-config",
   "repository": "https://github.com/levakorg/prettier-config",
   "bugs": "https://github.com/levakorg/prettier-config/issues",
+  "version": "1.0.0",
   "license": "MIT",
+  "main": "dist/index.main.cjs",
+  "module": "dist/index.module.mjs",
+  "browser": "dist/index.browser.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.main.cjs",
+      "import": "./dist/index.module.mjs",
+      "browser": "./dist/index.browser.js"
+    }
+  },
   "keywords": [
     "prettier",
     "prettier-config"
@@ -26,30 +36,22 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "prettier": "prettier check .",
-    "prettier:fix": "prettier --write .",
-    "eslint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte",
-    "eslint:fix": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte --fix",
-    "format": "yarn prettier:fix && yarn eslint:fix"
+    "watch": "rollup -c --watch",
+    "format": "prettier --write \"./**/*.{md,html,css,json,cjs,mjs,js,ts,jsx,tsx,vue,svelte}\"",
+    "lint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte --fix"
   },
-  "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2",
-    "@levakorg/eslint-config": "^1.0.0",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-terser": "^0.4.0",
-    "eslint": "^8.26.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "prettier": "^2.7.1",
-    "rollup": "^3.17.0"
+    "@babel/core": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "prettier": "^3.3.2",
+    "rollup": "^4.18.0",
+    "rollup-plugin-polyfill-node": "^0.13.0"
   },
   "peerDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.3.2"
   }
 }

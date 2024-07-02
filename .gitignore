@@ -4,6 +4,17 @@
 npm-debug.log
 yarn-error.log
 
+# environment
+.env
+.env.dev
+.env.stage
+
+# bundle
+/dist
+
+# testing
+/testing
+
 # editors
 /.idea
 /.vscode

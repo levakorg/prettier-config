@@ -1,3 +1,1 @@
-const config = require('./.prettierrc.js')
-
-module.exports = config
+export { default } from './.prettierrc'

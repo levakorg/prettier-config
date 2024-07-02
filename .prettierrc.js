@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
@@ -6,7 +6,7 @@ module.exports = {
   singleQuote: true,
   quoteProps: 'consistent',
   jsxSingleQuote: true,
-  trailingComma: 'none',
+  trailingComma: 'es5',
   bracketSpacing: true,
   bracketSameLine: false,
   arrowParens: 'always',
@@ -21,5 +21,5 @@ module.exports = {
   vueIndentScriptAndStyle: false,
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  ...require('./lib/plugin-sort-imports.js')
+  singleAttributePerLine: true,
 }

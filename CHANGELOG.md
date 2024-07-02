@@ -1,9 +1,8 @@
 # CHANGELOG
 
-## 1.0.1
+## 1.0.2
 
-- Remove about section from README file
-- Add github packages
+## 1.0.1
 
 ## 1.0.0
 

@@ -1,3 +1,3 @@
-module.exports = {
-  extends: ['@levakorg/eslint-config']
+export default {
+  extends: ['@levakorg/eslint-config'],
 }

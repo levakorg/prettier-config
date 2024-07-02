@@ -35,38 +35,30 @@ package.json
 .prettierrc.js
 
 ```JS
-module.exports = {
-  ...require('@levakorg/prettier-config')
-}
+module.exports = require("@levakorg/prettier-config")
+```
+```JS
+export { default } from '@levakorg/prettier-config'
 ```
 
 **3. Add scripts**
 
 ```JSON
 {
-  "prettier": "prettier check .",
-  "prettier:fix": "prettier --write .",
+  "format": "prettier --write \"./**/*.{md,html,css,json,cjs,mjs,js,ts,jsx,tsx,vue,svelte}\"",
 }
 ```
 
 **4. Using scripts**
 
 ```
-npm run prettier
-```
-
-```
-npm run prettier:fix
+npm run format
 ```
 
 or
 
 ```
-yarn prettier
-```
-
-```
-yarn prettier:fix
+yarn format
 ```
 
 ### Notes
