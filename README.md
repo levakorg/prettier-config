@@ -6,13 +6,13 @@ Prettier config levakorg org's
 
 **1. Installation**
 
-```
+```BASH
 npm install --save-dev prettier @levakorg/prettier-config
 ```
 
 or
 
-```
+```BASH
 yarn add --dev prettier @levakorg/prettier-config
 ```
 
@@ -51,13 +51,13 @@ export { default } from '@levakorg/prettier-config'
 
 **4. Using scripts**
 
-```
+```BASH
 npm run format
 ```
 
 or
 
-```
+```BASH
 yarn format
 ```
 
