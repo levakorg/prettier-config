@@ -7,7 +7,7 @@
   "homepage": "https://github.com/levakorg/prettier-config",
   "repository": "https://github.com/levakorg/prettier-config",
   "bugs": "https://github.com/levakorg/prettier-config/issues",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.main.cjs",
   "module": "dist/index.module.mjs",
