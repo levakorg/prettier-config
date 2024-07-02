@@ -12,7 +12,6 @@
   "main": "dist/index.main.cjs",
   "module": "dist/index.module.mjs",
   "browser": "dist/index.browser.js",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.main.cjs",
